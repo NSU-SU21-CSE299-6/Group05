@@ -5,7 +5,7 @@
 <p align="center">Department of Electrical &amp; Computer Engineering</p>
 <p align="center"><strong>Project Proposal</strong></p>
 <p align="center"><strong>Group No</strong>: 05</p>
-<p align="center"><strong>Summer 2019</strong></p>
+<p align="center"><strong>Summer 2021</strong></p>
 <p align="center"><strong>Project Name</strong>: NSU CLUB MANAGEMENT SYSTEM</p>
 <p align="center"><strong>Course No</strong>: CSE 299 <strong>Sec</strong><strong>:</strong> 06</p>
 <p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (Sas3)</p>
