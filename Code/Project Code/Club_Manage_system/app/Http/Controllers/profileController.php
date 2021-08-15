@@ -7,4 +7,7 @@ use Illuminate\Http\Request;
 class profileController extends Controller
 {
     //
+    public function addmember(){
+        return view('admin.memberprofile');
+    }
 }

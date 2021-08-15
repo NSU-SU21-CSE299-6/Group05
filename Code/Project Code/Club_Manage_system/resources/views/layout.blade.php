@@ -200,7 +200,7 @@
               <div class="collapse" id="advancedSubmenu">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/forms/form-addons.html">Profile</a>
+                    <a class="nav-link" href="{{URL::to('/clubpresidentprofile')}}">Profile</a>
                   </li>
                 </ul>
               </div>
