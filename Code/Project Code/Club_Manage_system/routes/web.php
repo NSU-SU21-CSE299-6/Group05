@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AllmembersController;
+use App\Http\Controllers\AddmembersController;
+use App\Http\Controllers\nsuacmController;
+use App\Http\Controllers\nsupsController;
+use App\Http\Controllers\nsuieeeController;
+use App\Http\Controllers\nsusscController;
+use App\Http\Controllers\profileController;
+use App\Http\Controllers\club_prsident_profileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
