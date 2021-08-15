@@ -21,7 +21,7 @@ use App\Http\Controllers\club_prsident_profileController;
 |
 */
 //logout
-Route::get('/logout', [AdminController::class, 'logout']);
+Route::get('/log-out', [AdminController::class, 'logout']);
 
 Route::get('/', function () {
     return view('welcome');
