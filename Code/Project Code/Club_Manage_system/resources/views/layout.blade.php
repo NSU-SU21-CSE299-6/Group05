@@ -82,7 +82,7 @@
                   <p class="Sende-name">Settings</p>
                 </div>
               </a>
-              <a class="dropdown-item" href="{{URL::to('/logout')}}">
+              <a class="dropdown-item" href="{{URL::to('/log-out')}}">
                 <div class="sender-img">
                   <img src="http://via.placeholder.com/47x47" alt="">
                   
