@@ -1,6 +1,7 @@
 @extends('layout')
 @section('content')
-hello 
+
+addmember
 
 
 
