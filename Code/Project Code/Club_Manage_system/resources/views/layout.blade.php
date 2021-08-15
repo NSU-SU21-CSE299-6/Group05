@@ -35,80 +35,7 @@
         <a class="nav-link" id="close-button" href="#"><i class="mdi mdi-window-close"></i></a>
       </li>
     </ul>
-    <div class="tab-content" id="setting-content">
-      <div class="tab-pane fade show active" id="layouts-section" role="tabpanel" aria-labelledby="layouts-tab">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle btn-block mb-4" type="button" id="sidebar-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sidebar Mode
-          </button>
-          <div class="dropdown-menu" aria-labelledby="sidebar-color">
-            <a class="dropdown-item" href="#" id="side-theme-light">Light</a>
-            <a class="dropdown-item" href="#" id="side-theme-dark">Dark</a>
-          </div>
-        </div>
-        <div class="dropdown d-none d-md-block">
-          <button class="btn btn-secondary dropdown-toggle btn-block" type="button" id="Layouts-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Layouts
-          </button>
-          <div class="dropdown-menu" aria-labelledby="Layouts-type">
-            <a class="dropdown-item" href="#" id="boxed-layout-view">Boxed</a>
-            <a class="dropdown-item" href="#" id="compact-layout-view">Compact menu</a>
-            <a class="dropdown-item" href="#" id="icon-only-layout-view">Icon Menu</a>
-            <a class="dropdown-item" href="#" id="rtl-layout-view">RTL</a>
-            <a class="dropdown-item" href="#" id="hidden-menu-1-layout-view">Hidden Menu 1</a>
-            <a class="dropdown-item" href="#" id="hidden-menu-2-layout-view">Hidden Menu 2</a>
-          </div>
-        </div>
-      </div>
-      <!-- layout section tabends -->
-      <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-tab">
-        <ul class="chat-list">
-          <li class="list active">
-            <div class="profile"><img src="http://via.placeholder.com/47x47" alt=""><span class="online"></span></div>
-            <div class="info">
-              <p>Thomas Douglas</p>
-              <p>Available</p>
-            </div>
-          </li>
-          <li class="list">
-            <div class="profile"><img src="http://via.placeholder.com/47x47" alt=""><span class="online"></span></div>
-            <div class="info">
-              <p>Thomas Douglas</p>
-              <p>Available</p>
-            </div>
-          </li>
-          <li class="list">
-            <div class="profile"><img src="http://via.placeholder.com/47x47" alt=""></div>
-            <div class="info">
-              <p>Thomas Douglas</p>
-              <p>Available</p>
-            </div>
-          </li>
-          <li class="list">
-            <div class="profile"><img src="http://via.placeholder.com/47x47" alt=""><span class="ofline"></span></div>
-            <div class="info">
-              <p>Thomas Douglas</p>
-              <p>Available</p>
-            </div>
-          </li>
-          <li class="list">
-            <div class="profile"><img src="http://via.placeholder.com/47x47" alt=""><span class="online"></span></div>
-            <div class="info">
-              <p>Thomas Douglas</p>
-              <p>Available</p>
-            </div>
-          </li>
-          <li class="list">
-            <div class="profile"><img src="http://via.placeholder.com/47x47" alt=""></div>
-            <div class="info">
-              <p>Thomas Douglas</p>
-              <p>Available</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- chat section tabends -->
-    </div>
+    
   </div>
   <!-- partial -->
   <div class="container-scroller">
@@ -192,13 +119,13 @@
               <span class="nav-link">Features</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="{{URL::to('/allmember')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 <span class="menu-title">All members</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/widgets.html">
+              <a class="nav-link" href="{{URL::to('/addmember')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
                 <span class="menu-title">Add members</span>
                 <span class="badge badge-danger badge-pill ml-auto">New</span>
@@ -213,13 +140,10 @@
               <div class="collapse" id="layoutsSubmenu">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/boxed-layout.html">Profile</a>
+                    <a class="nav-link" href="{{URL::to('/membersprofile')}}">Profile</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/rtl-layout.html">Participated Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/horizontal-menu.html">Other Clubs</a>
+                    <a class="nav-link" href="{{URL::to('/perticipatedevents')}}">Participated Events</a>
                   </li>
                 </ul>
               </div>
@@ -233,19 +157,16 @@
               <div class="collapse" id="sidebar_layouts">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/compact-menu.html">NSU ACM</a>
+                    <a class="nav-link" href="{{URL::to('/nsuacm')}}">NSU ACM</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-collapsed.html">NSU PS</a>
+                    <a class="nav-link" href="{{URL::to('/nsups')}}">NSU PS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-hidden.html">NSU IEEE</a>
+                    <a class="nav-link" href="{{URL::to('/nsuieee')}}">NSU IEEE</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-hidden-overlay.html">NSU Robotics Club</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/sidebar-fixed.html">NSU SSC</a>
+                    <a class="nav-link" href="{{URL::to('/nsussc')}}">NSU SSC</a>
                   </li>
                 </ul>
               </div>
