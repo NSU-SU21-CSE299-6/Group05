@@ -42,14 +42,29 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper">
-        	<span class="nav-link"> NSU Club Management System</span>   
+        <li class="nav-item">
+          <!--<a class="navbar-brand brand-logo" href="{{URL::to('/admin_dashboard')}}"><img src="" alt="Logo"></a> -->
+              <a class="nav-link" href="{{URL::to('/admin_dashboard')}}">
+                <i class="mdi mdi-puzzle menu-icon"></i>
+                <span class="menu-title">Admin deshboard</span>
+              </a>
+            </li>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
         <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="btn-group d-none d-sm-block">
-          
+          <button type="button" class="btn btn-secondary btn-sm text-muted border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
         </div>
         <form class="form-inline mt-2 ml-3 mt-md-0 d-none d-sm-block">
           <div class="input-group solid">
@@ -61,7 +76,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
               <i class="mdi mdi-message-outline"></i>
-              <span class="count bg-danger">4</span>
+              <span class="count bg-danger">3</span>
             </a>
             <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
               <a class="dropdown-item" href="#">

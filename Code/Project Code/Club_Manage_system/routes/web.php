@@ -33,3 +33,6 @@ Route::get('/backend', function () {
 //admin login .....
 Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
+
+//add Student
+Route::get('/addmember', [AddmembersController::class, 'addmember']);
