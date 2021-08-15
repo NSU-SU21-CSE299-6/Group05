@@ -20,6 +20,8 @@ use App\Http\Controllers\club_prsident_profileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//logout
+Route::get('/logout', [AdminController::class, 'logout']);
 
 Route::get('/', function () {
     return view('welcome');
