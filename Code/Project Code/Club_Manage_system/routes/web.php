@@ -9,7 +9,7 @@ use App\Http\Controllers\nsupsController;
 use App\Http\Controllers\nsuieeeController;
 use App\Http\Controllers\nsusscController;
 use App\Http\Controllers\profileController;
-use App\Http\Controllers\club_prsident_profileController;
+use App\Http\Controllers\club_president_profileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,20 +35,20 @@ Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 
 //add member
-Route::get('/allmember', [AddmembersController::class, 'addmember']);
-//all member
 Route::get('/addmember', [AddmembersController::class, 'addmember']);
+//all member
+Route::get('/allmember', [AllmembersController::class, 'allmember']);
 //members profile
-Route::get('/membersprofile', [AddmembersController::class, 'addmember']);
+Route::get('/membersprofile', [profileController::class, 'memberprofile']);
 //perticipated events
-Route::get('/perticipatedevents', [AddmembersController::class, 'addmember']);
+Route::get('/perticipatedevents', [profileController::class, 'perticipatedevent']);
 // NSU ACM
-Route::get('/nsuacm', [AddmembersController::class, 'addmember']);
+Route::get('/nsuacm', [nsuacmController::class, 'nsuacm']);
 //NSU PS
-Route::get('/nsups', [AddmembersController::class, 'addmember']);
+Route::get('/nsups', [nsupsController::class, 'nsups']);
 //NSU IEEE
-Route::get('/nsuieee', [AddmembersController::class, 'addmember']);
+Route::get('/nsuieee', [nsuieeeController::class, 'nsuieee']);
 //NSU SSC
-Route::get('/nsussc', [AddmembersController::class, 'addmember']);
+Route::get('/nsussc', [nsusscController::class, 'nsussc']);
 //CLUB president profile
-Route::get('/clubpresidentprofile', [AddmembersController::class, 'addmember']);
+Route::get('/clubpresidentprofile', [club_president_profileController::class, 'presindentprofile']);
