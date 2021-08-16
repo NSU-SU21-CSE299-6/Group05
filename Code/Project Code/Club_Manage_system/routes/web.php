@@ -36,6 +36,8 @@ Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 
 //add member
 Route::get('/addmember', [AddmembersController::class, 'addmember']);
+//save member
+Route::post('/save_member', [AddmembersController::class, 'savemember']);
 //all member
 Route::get('/allmember', [AllmembersController::class, 'allmember']);
 //members profile
