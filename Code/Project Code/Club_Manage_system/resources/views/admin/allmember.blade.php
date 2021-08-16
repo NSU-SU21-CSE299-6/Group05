@@ -35,6 +35,8 @@
                                      <span class = "label label-success">{{'NSU IEEE'}}</span>
                                 @elseif($v_member->member_club == 4)
                                      <span class = "label label-success">{{'NSU SSC'}}</span>
+                                @else
+                                     <span class = "label label-success">{{'Not Defined'}}</span>
                                 @endif
                           </td>
                           <td>
