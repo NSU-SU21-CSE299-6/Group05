@@ -26,7 +26,17 @@
                           <td>{{$v_member->member_phone}}</td>
                           <td><img src="{{URL::to($v_member->member_image)}}" height="80" width="100" style="border-radius: 50%;"></td>
                           <td>{{$v_member->member_address}}</td>
-                          <td>{{$v_member->member_club}}</td>
+                          <td>
+                                @if($v_member->member_club == 1)
+                                     <span class = "label label-success">{{'NSU ACM'}}</span>
+                                @elseif($v_member->member_club == 2)
+                                     <span class = "label label-success">{{'NSU PS'}}</span>
+                                @elseif($v_member->member_club == 3)
+                                     <span class = "label label-success">{{'NSU IEEE'}}</span>
+                                @elseif($v_member->member_club == 4)
+                                     <span class = "label label-success">{{'NSU SSC'}}</span>
+                                @endif
+                          </td>
                           <td>
                             <button class="btn btn-outline-primary">View</button>
                             <button class="btn btn-outline-warning">Edit</button>
