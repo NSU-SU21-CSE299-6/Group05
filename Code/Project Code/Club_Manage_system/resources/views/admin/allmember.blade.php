@@ -24,7 +24,7 @@
                           <td>{{$v_member->member_id}}</td>
                           <td>{{$v_member->member_name}}</td>
                           <td>{{$v_member->member_phone}}</td>
-                          <td>Manos</td>
+                          <td><img src="{{URL::to($v_member->member_image)}}" height="80" width="100" style="border-radius: 50%;"></td>
                           <td>{{$v_member->member_address}}</td>
                           <td>{{$v_member->member_club}}</td>
                           <td>
