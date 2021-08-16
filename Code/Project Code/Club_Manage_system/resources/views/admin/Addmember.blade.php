@@ -5,7 +5,7 @@
      <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Member's Information</h2>
-                        <form class="forms-sample" method="post" action="{{URL::to('/add_member')}}" enctype="multipart/form-data">
+                        <form class="forms-sample" method="POST" action="{{URL::to('/save_member')}}" enctype="multipart/form-data">
                             {{csrf_field() }}
                               <div class="form-group">
                                   <label for="exampleInputEmail1">Member Name</label>
@@ -48,7 +48,7 @@
                                   <label for="exampleInputPassword1">Password</label>
                                   <input type="password" class="form-control p-input" name="member_password" placeholder="Password">
                               </div>
-                              
+
                               <div class="form-group">
                                   <label for="exampleInputPassword1">Club</label>
                                   <select class="form-control p-input" name="member_club">
