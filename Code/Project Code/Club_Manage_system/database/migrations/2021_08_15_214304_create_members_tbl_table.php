@@ -24,7 +24,7 @@ class CreateMembersTblTable extends Migration
             $table->string('member_address');
             $table->string('member_image');
             $table->string('member_password');
-            $table->string('member_department');
+            $table->string('member_club');
             $table->string('member_addmissionyear');
 
         });
