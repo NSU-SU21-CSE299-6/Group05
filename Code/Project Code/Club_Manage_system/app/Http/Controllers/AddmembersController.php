@@ -41,17 +41,17 @@ class AddmembersController extends Controller
         if($success){
             $data['member_image'] = $image_url;
                 DB::table('members_tbl')->insert($data);
-                Session::put('message', 'member info added successfully!!');
+                Session::put('exception', 'member info added successfully!!');
                 return Redirect::to('/addmember');
          }
         }
         $data['member_image'] = $image_url;
                 DB::table('members_tbl')->insert($data);
-                Session::put('message', 'member info added successfully!!');
+                Session::put('exception', 'member info added successfully!!');
                 return Redirect::to('/addmember');
 
     DB::table('members_tbl')->insert($data);
-    Session::put('message', 'member info added successfully!!');
+    Session::put('exception', 'member info added successfully!!');
     return Redirect::to('/addmember');
 
      }
