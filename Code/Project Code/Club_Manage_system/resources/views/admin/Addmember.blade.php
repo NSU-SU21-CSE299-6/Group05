@@ -5,7 +5,7 @@
      <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Member's Information</h2>
-                    <p class="alert-danger">
+                    <p class="alert-success">
                          <?php
                             $exception=Session::get('exception');
 
