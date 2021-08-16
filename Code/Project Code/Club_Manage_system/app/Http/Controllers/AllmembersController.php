@@ -13,6 +13,12 @@ class AllmembersController extends Controller
 {
     //
     public function allmember(){
-        return view('admin.allmember');
+        $allmember_info = DB::table('members_tbl')
+                           -> get();
+        $manage_member = view('admin.allmember')
+                        -> with('all_member_info',$allmember_info);
+        return view('layout')
+                    -> with('allmember',$manage_member);
+        //return view('admin.allmember');
     }
 }

@@ -19,19 +19,21 @@
                       </tr>
                     </thead>
                     <tbody>
+                    @foreach($all_member_info as $v_member)
                       <tr>
-                          <td>1</td>
-                          <td>Mohsin</td>
-                          <td>0181464656</td>
+                          <td>{{$v_member->member_id}}</td>
+                          <td>{{$v_member->member_name}}</td>
+                          <td>{{$v_member->member_phone}}</td>
                           <td>Manos</td>
-                          <td>Chittagong</td>
-                          <td>NSU ACM</td>
+                          <td>{{$v_member->member_address}}</td>
+                          <td>{{$v_member->member_club}}</td>
                           <td>
                             <button class="btn btn-outline-primary">View</button>
                             <button class="btn btn-outline-warning">Edit</button>
                             <button class="btn btn-outline-danger">Delete</button>
                           </td>
                       </tr>
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
