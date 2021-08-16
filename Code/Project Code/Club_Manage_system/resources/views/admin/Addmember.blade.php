@@ -5,6 +5,16 @@
      <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Member's Information</h2>
+                    <p class="alert-danger">
+                         <?php
+                            $exception=Session::get('exception');
+
+                            if ($exception){
+                            echo $exception;
+                            Session::put('exception',null);
+                        }
+                        ?> 
+                        </p>
                         <form class="forms-sample" method="POST" action="{{URL::to('/save_member')}}" enctype="multipart/form-data">
                             {{csrf_field() }}
                               <div class="form-group">
