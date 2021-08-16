@@ -19,7 +19,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                    @foreach($NSU_ACM_member_info as $v_member)
+                    @foreach($nsuacm_member_info as $v_member)
                       <tr>
                           <td>{{$v_member->member_id}}</td>
                           <td>{{$v_member->member_name}}</td>
@@ -58,4 +58,3 @@
 
 
 @endsection
-© 2021 GitHub, Inc.
