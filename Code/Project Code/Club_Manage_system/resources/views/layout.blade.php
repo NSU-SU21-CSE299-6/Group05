@@ -76,7 +76,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="MailDropdown" href="#" data-toggle="dropdown">
               <i class="mdi mdi-message-outline"></i>
-              <span class="count bg-danger">3</span>
+              <span class="count bg-danger">4</span>
             </a>
             <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
               <a class="dropdown-item" href="#">
@@ -95,6 +95,15 @@
                 </div>
                 <div class="sender">
                   <p class="Sende-name">Settings</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="{{URL::to('/messenger')}}">
+                <div class="sender-img">
+                  <img src="http://via.placeholder.com/47x47" alt="">
+                  
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">Messenger</p>
                 </div>
               </a>
               <a class="dropdown-item" href="{{URL::to('/log-out')}}">
