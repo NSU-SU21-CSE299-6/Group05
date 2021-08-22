@@ -13,6 +13,14 @@ class nsusscController extends Controller
 {
     //
     public function nsussc(){
-        return view('admin.nsussc');
+        $nsusscmember_info = DB::table('members_tbl')
+        ->where(['member_club'=>4])
+        -> get();
+
+$manage_member = view('admin.nsussc')
+     -> with('nsussc_member_info',$nsusscmember_info);
+return view('layout')
+ -> with('nsussc',$manage_member);
+return view('admin.nsussc');
     }
 }
