@@ -10,7 +10,6 @@ use App\Http\Controllers\nsuieeeController;
 use App\Http\Controllers\nsusscController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\club_president_profileController;
-use App\Http\Controllers\messengerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,11 +34,6 @@ Route::get('/backend', function () {
 Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 
-//Messenger
-Route::get('/messenger', [messengerController::class, 'messenger']);
-//sent message
-//Route::post('/save_member', [AddmembersController::class, 'savemember']);
-
 //add member
 Route::get('/addmember', [AddmembersController::class, 'addmember']);
 //save member
@@ -60,3 +54,6 @@ Route::get('/nsuieee', [nsuieeeController::class, 'nsuieee']);
 Route::get('/nsussc', [nsusscController::class, 'nsussc']);
 //CLUB president profile
 Route::get('/clubpresidentprofile', [club_president_profileController::class, 'presindentprofile']);
+
+//member delete
+Route::get('/member_delete/{member_id}', [AllmembersController::class, 'memberdelete']);
