@@ -21,4 +21,13 @@ class AllmembersController extends Controller
                     -> with('allmember',$manage_member);
         //return view('admin.allmember');
     }
+
+
+    public function memberdelete($member_id){
+       DB::table('members_tbl')
+                ->where('member_id',$member_id)
+                ->delete();
+
+                return Redirect::to('/allmember');
+    }
 }
