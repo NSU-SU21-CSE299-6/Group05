@@ -54,7 +54,36 @@
             </ul>
         </div>
         </div>
-        
+        <div class="col-md-8" id="messages">
+            <div class="message-wrapper">
+                <ul class="messages">
+                    <li class="message clearfix">
+                        <div class="sent">
+                            <p>Hi.How are you?</p>
+                            <p class="date"> 21 august 2021</p>
+                        </div>
+                    </li>
+                    <li class="message clearfix">
+                        <div class="received">
+                            <p>Hi.How are you?</p>
+                            <p class="date"> 21 august 2021</p>
+                        </div>
+                    </li>
+                    <li class="message clearfix">
+                        <div class="sent">
+                            <p>Hi.How are you?</p>
+                            <p class="date"> 21 august 2021</p>
+                        </div>
+                    </li>
+                    <li class="message clearfix">
+                        <div class="received">
+                            <p>Hi.How are you?</p>
+                            <p class="date"> 21 august 2021</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
