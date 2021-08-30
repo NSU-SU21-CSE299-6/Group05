@@ -21,17 +21,18 @@ use App\Http\Controllers\messengerController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//logout
-Route::get('/log-out', [AdminController::class, 'logout']);
+
 
 Route::get('/', function () {
     return view('welcome');
 });
+//admin login .....
 Route::get('/backend', function () {
     return view('admin.admin_login');
 });
-
-//admin login .....
+//logout
+Route::get('/log-out', [AdminController::class, 'logout']);
+//admin dashboard
 Route::post('/adminlogin', [AdminController::class, 'login_dashboard']);
 Route::get('/admin_dashboard', [AdminController::class, 'admin_dashboard']);
 
