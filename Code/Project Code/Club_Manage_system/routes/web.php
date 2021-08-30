@@ -11,7 +11,7 @@ use App\Http\Controllers\nsusscController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\club_president_profileController;
 use App\Http\Controllers\messengerController;
-use App\Http\Controllers\HomeController;
+//use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
