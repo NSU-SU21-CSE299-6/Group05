@@ -13,7 +13,7 @@ session_start();
 
 class AddmembersController extends Controller
 {
-    //
+    // 
     public function addmember(){
         return view('admin.Addmember');
     }
