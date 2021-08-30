@@ -11,6 +11,7 @@ use App\Http\Controllers\nsusscController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\club_president_profileController;
 use App\Http\Controllers\messengerController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,10 +23,17 @@ use App\Http\Controllers\messengerController;
 |
 */
 
-
+//User Login
 Route::get('/', function () {
-    return view('welcome');
+    return view('User.login');
 });
+//logout
+Route::get('/log_out', [HomeController::class, 'logout']);
+//User dashboard
+Route::post('/userlogin', [HomeController::class, 'user_login']);
+Route::get('/user_dashboard', [HomeController::class, 'user_dashboard']);
+
+
 //admin login .....
 Route::get('/backend', function () {
     return view('admin.admin_login');
