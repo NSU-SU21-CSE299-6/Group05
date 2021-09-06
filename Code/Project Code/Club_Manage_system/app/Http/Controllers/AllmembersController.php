@@ -30,4 +30,13 @@ class AllmembersController extends Controller
 
                 return Redirect::to('/allmember');
     }
+
+
+    public function memberview(){
+
+        return view('admin.memberview');
+    }
+
 }
+
+  
