@@ -17,4 +17,5 @@ class messengerController extends Controller
     public function messenger(){
         return view('Message');
     }
+    
 }
