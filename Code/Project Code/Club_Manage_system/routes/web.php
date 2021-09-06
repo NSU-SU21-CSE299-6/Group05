@@ -69,3 +69,6 @@ Route::get('/nsuieee', [nsuieeeController::class, 'nsuieee']);
 Route::get('/nsussc', [nsusscController::class, 'nsussc']);
 //CLUB president profile
 Route::get('/clubpresidentprofile', [club_president_profileController::class, 'presindentprofile']);
+
+//Member View
+Route::get('/memberview',[AllmembersController::class, 'memberview']);
