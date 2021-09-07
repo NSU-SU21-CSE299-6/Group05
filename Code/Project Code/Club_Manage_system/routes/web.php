@@ -71,7 +71,7 @@ Route::get('/nsussc', [nsusscController::class, 'nsussc']);
 Route::get('/clubpresidentprofile', [club_president_profileController::class, 'presindentprofile']);
 
 //Member View
-Route::get('/memberview',[AllmembersController::class, 'memberview']);  
+Route::get('member_view/{member_id}',[AllmembersController::class, 'memberview']);  
 
 //Member delete
 Route::get('member_delete/{student_id}',[AllmembersController::class, 'memberdelete']);

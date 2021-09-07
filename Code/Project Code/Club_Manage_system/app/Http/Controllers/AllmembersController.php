@@ -32,9 +32,21 @@ class AllmembersController extends Controller
     }
 
 
-    public function memberview(){
+    public function memberview($member_id){
 
-        return view('admin.memberview');
+       $member_description_view=DB::table('members_tbl')
+                       ->select('*')
+                       ->where('member_id',$member_id)
+                       ->first();
+
+            //echo"</pre>";
+            //print_r($member_description_view);
+            //echo "</pre>";
+        
+         $manage_description_member=view('admin.memberview')
+                        ->with('member_description_profile',$member_description_view);
+          return view('layout')
+                    ->with('memberview',$manage_description_member);
     }
 
 }
