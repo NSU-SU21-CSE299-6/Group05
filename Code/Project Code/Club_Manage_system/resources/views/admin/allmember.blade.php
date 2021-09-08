@@ -40,8 +40,8 @@
                                 @endif
                           </td>
                           <td>
-                            <a href="{{URL::to('/memberview')}}"><button class="btn btn-outline-primary">View</button></a>
-                            <button class="btn btn-outline-warning">Edit</button>
+                            <a href="{{URL::to('/member_view/'.$v_member->member_id)}}"><button class="btn btn-outline-primary">View</button></a>
+                            <a href="{{URL::to('/member_edit/'.$v_member->member_id)}}"><button class="btn btn-outline-primary">Edit</button></a>
                             <a href="{{URL::to('/member_delete/'.$v_member->member_id)}}"><button class="btn btn-outline-danger"
                             >Delete</button></a>
                           </td>

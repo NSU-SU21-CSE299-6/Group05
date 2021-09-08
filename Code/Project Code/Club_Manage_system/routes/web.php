@@ -73,5 +73,9 @@ Route::get('/clubpresidentprofile', [club_president_profileController::class, 'p
 //Member View
 Route::get('member_view/{member_id}',[AllmembersController::class, 'memberview']);  
 
+//Member Edit
+Route::get('member_edit/{member_id}',[AllmembersController::class, 'memberedit']);
+
+
 //Member delete
-Route::get('member_delete/{student_id}',[AllmembersController::class, 'memberdelete']);
+Route::get('member_delete/{member_id}',[AllmembersController::class, 'memberdelete']);
