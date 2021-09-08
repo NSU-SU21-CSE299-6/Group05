@@ -79,3 +79,6 @@ Route::get('member_edit/{member_id}',[AllmembersController::class, 'memberedit']
 
 //Member delete
 Route::get('member_delete/{member_id}',[AllmembersController::class, 'memberdelete']);
+
+//Edit update
+Route::post('update_member/{member_id}',[AllmembersController::class, 'memberupdate']);

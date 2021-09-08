@@ -67,6 +67,28 @@ class AllmembersController extends Controller
  
                  return Redirect::to('/allmember');
      }
+
+     public function memberupdate(Request $request,$member_id){
+
+        $data=array();
+        $data['member_name']=$request->member_name;
+        $data['member_id']=$request->member_id;
+        $data['member_fathername']=$request->member_fathername;
+        $data['member_mothername']=$request->member_mothername;
+        $data['member_email']=$request->member_email;
+        $data['member_phone']=$request->member_phone;
+        $data['member_address']=$request->member_address;
+        $data['member_password']=$request->member_password;
+        $data['member_club']=$request->member_club;
+        $data['member_addmissionyear']=$request->member_addmissionyear;
+
+        DB::table('members_tbl')
+              ->where('member_id',$member_id)
+              ->update($data);
+
+           Session::put('exception','Member Updated Successfully') ;
+           return Redirect::to('/allmember');  
+     }
  
 
 }
