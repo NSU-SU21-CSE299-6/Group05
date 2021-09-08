@@ -49,6 +49,26 @@ class AllmembersController extends Controller
                     ->with('memberview',$manage_description_member);
     }
 
+
+    public function memberedit($member_id){
+        $member_description_view=DB::table('members_tbl')
+                         ->select('*')
+                        ->where('member_id',$member_id)
+                         ->first();
+
+             //echo"</pre>";
+             //print_r($member_description_view);
+             //echo "</pre>";
+
+        $manage_description_member=view('admin.memberedit')
+                          ->with('member_description_profile',$member_description_view);
+        return view('layout')
+                  ->with('memberedit',$manage_description_member);
+ 
+                 return Redirect::to('/allmember');
+     }
+ 
+
 }
 
   
