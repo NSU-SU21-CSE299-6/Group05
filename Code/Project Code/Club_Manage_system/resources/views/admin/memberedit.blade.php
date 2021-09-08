@@ -73,7 +73,7 @@
                                   <label for="exampleInputPassword1">Addmission Year</label>
                                   <input type="date" class="form-control p-input" name="member_addmissionyear" placeholder="addmission year">
                               </div>
-                              <button type="submit" class="btn btn-success btn-block">Submit</button>
+                              <button type="submit" class="btn btn-success btn-block">Update</button>
                           </form>
                     </div>
         </div>
