@@ -13,6 +13,7 @@ use App\Http\Controllers\club_president_profileController;
 use App\Http\Controllers\AllPresidentController;
 use App\Http\Controllers\messengerController;
 use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -90,3 +91,8 @@ Route::get('/allpresident',[AllPresidentController::class, 'allpresident']);
 //President View
 Route::get('president_view/{president_id}',[AllPresidentController::class, 'presidentview']);  
 
+//All president 
+Route::get('/addpresident',[AllPresidentController::class, 'addpresident']);
+
+//save president
+Route::post('/save_president', [AllPresidentController::class, 'savepresident']);
