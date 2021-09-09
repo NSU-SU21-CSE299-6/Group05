@@ -80,7 +80,7 @@ class AllmembersController extends Controller
         $data['member_address']=$request->member_address;
         $data['member_password']=$request->member_password;
         $data['member_club']=$request->member_club;
-        $data['member_addmissionyear']=$request->member_addmissionyear;
+        $data['member_admissionyear']=$request->member_admissionyear;
 
         DB::table('members_tbl')
               ->where('member_id',$member_id)

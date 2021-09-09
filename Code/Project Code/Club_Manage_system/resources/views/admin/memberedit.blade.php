@@ -71,9 +71,9 @@
                             </div>
 
                              <div class="form-group">
-                                  <label for="exampleInputPassword1">Addmission Year</label>
-                                  <input type="date" class="form-control p-input" name="member_addmissionyear" 
-                                  value = "{{($member_description_profile->member_addmissionyear)}}">
+                                  <label for="exampleInputPassword1">Admission Year</label>
+                                  <input type="date" class="form-control p-input" name="member_admissionyear" 
+                                  value = "{{($member_description_profile->member_admissionyear)}}">
                               </div> 
                               <button type="submit" class="btn btn-success btn-block">Update</button>
                           </form>
