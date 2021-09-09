@@ -10,6 +10,7 @@ use App\Http\Controllers\nsuieeeController;
 use App\Http\Controllers\nsusscController;
 use App\Http\Controllers\profileController;
 use App\Http\Controllers\club_president_profileController;
+use App\Http\Controllers\AllPresidentController;
 use App\Http\Controllers\messengerController;
 use App\Http\Controllers\HomeController;
 /*
@@ -82,3 +83,10 @@ Route::get('member_delete/{member_id}',[AllmembersController::class, 'memberdele
 
 //Edit update
 Route::post('update_member/{member_id}',[AllmembersController::class, 'memberupdate']);
+
+//All president 
+Route::get('/allpresident',[AllPresidentController::class, 'allpresident']);
+
+//President View
+Route::get('president_view/{president_id}',[AllPresidentController::class, 'presidentview']);  
+
