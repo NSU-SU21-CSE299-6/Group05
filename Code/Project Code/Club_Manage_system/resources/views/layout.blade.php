@@ -210,6 +210,7 @@
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
                     <a class="nav-link" href="{{URL::to('/allpresident')}}">All President</a>
+                    <a class="nav-link" href="{{URL::to('/addpresident')}}">Add President</a>
                   </li>
                 </ul>
               </div>
