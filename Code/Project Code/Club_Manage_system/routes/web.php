@@ -96,3 +96,15 @@ Route::get('/addpresident',[AllPresidentController::class, 'addpresident']);
 
 //save president
 Route::post('/save_president', [AllPresidentController::class, 'savepresident']);
+
+//member login
+Route::get('/', function () {
+    return view('member.member_login');
+});
+//logout
+Route::get('/member_logout', [AdminController::class, 'member_logout']);
+//User dashboard
+Route::post('/memberlogin', [AdminController::class, 'memberlogin']);
+Route::get('/member_dashboard', [AdminController::class, 'member_dashboard']);
+
+
