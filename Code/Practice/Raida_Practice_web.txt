@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -53,6 +54,8 @@ Route::get('/messenger', [messengerController::class, 'messenger']);
 Route::get('/addmember', [AddmembersController::class, 'addmember']);
 //save member
 Route::post('/save_member', [AddmembersController::class, 'savemember']);
+//view member
+Route::get('/memberview', [AllmembersController::class, 'memberview']);
 //all member
 Route::get('/allmember', [AllmembersController::class, 'allmember']);
 //members profile
@@ -69,16 +72,3 @@ Route::get('/nsuieee', [nsuieeeController::class, 'nsuieee']);
 Route::get('/nsussc', [nsusscController::class, 'nsussc']);
 //CLUB president profile
 Route::get('/clubpresidentprofile', [club_president_profileController::class, 'presindentprofile']);
-
-//Member View
-Route::get('member_view/{member_id}',[AllmembersController::class, 'memberview']);  
-
-//Member Edit
-Route::get('member_edit/{member_id}',[AllmembersController::class, 'memberedit']);
-
-
-//Member delete
-Route::get('member_delete/{member_id}',[AllmembersController::class, 'memberdelete']);
-
-//Edit update
-Route::post('update_member/{member_id}',[AllmembersController::class, 'memberupdate']);

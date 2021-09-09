@@ -4,6 +4,16 @@
 <div class="card">
     <div class="card-body">
          <h2 class="card-title">Data table</h2>
+         <p class="alert-success">
+                         <?php
+                            $exception=Session::get('exception');
+
+                            if ($exception){
+                            echo $exception;
+                            Session::put('exception',null);
+                        }
+                        ?> 
+                        </p>
             <div class="row">
                 <div class="col-12">
                   <table id="order-listing" class="table table-striped" style="width:100%;">
@@ -40,8 +50,8 @@
                                 @endif
                           </td>
                           <td>
-                            <button class="btn btn-outline-primary">View</button>
-                            <button class="btn btn-outline-warning">Edit</button>
+                            <a href="{{URL::to('/member_view/'.$v_member->member_id)}}"><button class="btn btn-outline-primary">View</button></a>
+                            <a href="{{URL::to('/member_edit/'.$v_member->member_id)}}"><button class="btn btn-outline-primary">Edit</button></a>
                             <a href="{{URL::to('/member_delete/'.$v_member->member_id)}}"><button class="btn btn-outline-danger"
                             >Delete</button></a>
                           </td>
