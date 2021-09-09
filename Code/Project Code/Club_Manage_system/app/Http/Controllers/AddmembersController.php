@@ -29,7 +29,7 @@ class AddmembersController extends Controller
     $data['member_address'] = $request->member_address;
     $data['member_password'] = md5($request->member_password);
     $data['member_club'] = $request->member_club;
-    $data['member_addmissionyear'] = $request->member_addmissionyear;
+    $data['member_admissionyear'] = $request->member_admissionyear;
     $image=$request->file('member_image');
     if ($image){
         $image_name = Str::random(20);
