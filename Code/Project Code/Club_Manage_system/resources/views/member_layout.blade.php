@@ -79,15 +79,6 @@
               <span class="count bg-danger">4</span>
             </a>
             <div class="dropdown-menu navbar-dropdown mail-notification" aria-labelledby="MailDropdown">
-              <a class="dropdown-item" href="#">
-                <div class="sender-img">
-                  <img src="http://via.placeholder.com/47x47" alt="">
-                  
-                </div>
-                <div class="sender">
-                  <p class="Sende-name">Profile</p>
-                </div>
-              </a>
               <a class="dropdown-item" href="{{URL::to('/messenger')}}">
                 <div class="sender-img">
                   <img src="http://via.placeholder.com/47x47" alt="">
@@ -128,13 +119,19 @@
             <li class="nav-item">
               <a class="nav-link" href="{{URL::to('/member_dashboard')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
-                <span class="menu-title">All members</span>
+                <span class="menu-title">Club members</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{URL::to('/member_dashboard')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 <span class="menu-title">Club Events</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{URL::to('/member_profile')}}">
+                <i class="mdi mdi-gauge menu-icon"></i>
+                <span class="menu-title">Profile</span>
               </a>
             </li>
             <li class="nav-item">

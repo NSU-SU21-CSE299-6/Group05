@@ -108,3 +108,8 @@ Route::post('/memberlogin', [AdminController::class, 'memberlogin']);
 Route::get('/member_dashboard', [AdminController::class, 'member_dashboard']);
 
 
+//member_profile
+Route::get('/member_profile', [AddmembersController::class, 'memberprofile']);
+
+
+
