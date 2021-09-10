@@ -103,7 +103,7 @@ Route::get('/', function () {
 });
 //logout
 Route::get('/member_logout', [AdminController::class, 'member_logout']);
-//User dashboard
+//member dashboard
 Route::post('/memberlogin', [AdminController::class, 'memberlogin']);
 Route::get('/member_dashboard', [AdminController::class, 'member_dashboard']);
 
@@ -111,5 +111,10 @@ Route::get('/member_dashboard', [AdminController::class, 'member_dashboard']);
 //member_profile
 Route::get('/member_profile', [AddmembersController::class, 'memberprofile']);
 
+//member_setting
+Route::get('/member_setting',[AdminController::class, 'membersetting']);
 
+
+//update own profile
+Route::post('/update_own_profile',[AllmembersController::class, 'updateownprofile']);  
 

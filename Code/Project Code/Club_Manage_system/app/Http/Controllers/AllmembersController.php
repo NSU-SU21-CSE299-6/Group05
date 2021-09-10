@@ -89,6 +89,32 @@ class AllmembersController extends Controller
            Session::put('exception','Member Updated Successfully') ;
            return Redirect::to('/allmember');  
      }
+
+
+
+     
+     public function updateownprofile(Request $request){
+
+      $member_id=Session::get('member_id');
+      $data=array();
+      
+     
+      $data['member_email']=$request->member_email;
+      
+      $data['member_phone']=$request->member_phone;
+     
+      $data['member_password']=$request->member_password;
+      
+      
+      DB::table('members_tbl')
+            ->where('member_id',$member_id)
+            ->update($data);
+
+         Session::put('exception','Info Updated Successfully') ;
+         return Redirect::to('/member_setting');  
+   }
+
+    
  
 
 }

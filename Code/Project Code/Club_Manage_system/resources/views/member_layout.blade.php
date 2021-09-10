@@ -1,3 +1,11 @@
+<?php
+        $member_id=Session::get('member_id');
+        $member_info=DB::table('members_tbl')
+                    ->Where('member_id',$member_id)
+                    ->first();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,9 +52,9 @@
       <div class="text-center navbar-brand-wrapper">
         <li class="nav-item">
           <!--<a class="navbar-brand brand-logo" href="{{URL::to('/admin_dashboard')}}"><img src="" alt="Logo"></a> -->
-              <a class="nav-link" href="{{URL::to('/')}}">
+              <a class="nav-link" href="{{URL::to('/member_dashboard')}}">
                 <i class="mdi mdi-puzzle menu-icon"></i>
-                <span class="menu-title">Member dashboard</span>
+                <span class="menu-title">NSU Club Family</span>
               </a>
             </li>
       </div>
@@ -104,11 +112,10 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <div class="user-info">
             <div class="profile">
-              <img src="http://via.placeholder.com/47x47" alt="">
+              <img src="{{URL::to($member_info->member_image)}}" alt="">
             </div>
             <div class="details">
-              <p class="user-name">NSU</p>
-              <p class="designation">Club Family</p>
+              <p class="user-name">{{$member_info->member_name}}</p>
             </div>
           </div>
           <ul class="nav">
@@ -135,7 +142,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{URL::to('/member_dashboard')}}">
+              <a class="nav-link" href="{{URL::to('/member_setting')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 <span class="menu-title">Settings</span>
               </a>

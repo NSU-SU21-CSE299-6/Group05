@@ -88,4 +88,22 @@ class AdminController extends Controller
 			return Redirect::to('/');
 		}
 	}
+
+	public function membersetting(){
+
+		$member_id=Session::get('member_id');
+        $member_description_view=DB::table('members_tbl')
+                        ->select('*')
+                        ->where('member_id',$member_id)
+                        ->first();
+ 
+             //echo"</pre>";
+             //print_r($member_description_view);
+             //echo "</pre>";
+         
+          $manage_description_member=view('member.member_setting')
+                         ->with('member_description_profile',$member_description_view);
+           return view('member_layout')
+                     ->with('member_setting',$manage_description_member);
+	}
 }
